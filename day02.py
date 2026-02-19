@@ -6,4 +6,4 @@ print(age)
 print(type(age))
 
 
-print(NEW changes)
+print("NEW changes")
