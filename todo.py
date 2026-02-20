@@ -15,9 +15,10 @@ def add_task():
 
 def remove_todo():
     show_todos()
-    number = int(input("Enter a task number to remove it:"))
-    removed = todos.pop(number-1)
-    print(f"'{removed}' removed for your todo list.")
+    if len(todos) != 0:
+        number = int(input("Enter a task number to remove it:"))
+        removed = todos.pop(number-1)
+        print(f"'{removed}' removed for your todo list.")
 
 while True:
     print(f"\n What do you want to do???")
@@ -35,7 +36,7 @@ while True:
     elif(choice == 3):
         remove_todo()
     elif(choice == 4):
-        print("Goodbye")
+        print("Goodbye!!! See You Again")
         break
     else:
         print("INVALID CHOICE. TRY AGAIN")
